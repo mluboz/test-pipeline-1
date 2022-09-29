@@ -5,7 +5,7 @@ pipeline {
         stage('read') {
             steps {
 				script {
-					def data = readFile(file: test-textfile.txt')
+					def data = readFile(file: 'test-textfile.txt')
 					println(data)
                 }
 			}
